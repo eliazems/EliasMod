@@ -4,7 +4,7 @@ Eu odeio um monte de coisas,
 e eu particularmente não gosto de nada. 
 O que eu tenho não é um sonho, 
 porque eu vou torná-lo uma realidade. 
-Vou restaurar meu clã, e matar um certo alguém
+Vou restaurar meu clã, e matar um certo alguém.
 
 OBJETIVOS GERAIS
 
@@ -13,15 +13,15 @@ no tAPI para o tModLoader, fazendo todas as adaptações possível para isso.
 
 ------------------------------//------------------------------------------
 
-até então como anda o projeto
+Até então como anda o projeto
 
-Armaduras (Power Suit, Varia Suit, e Gravity Suit)
-foram portadas com adapações provisorias de craft e de funcionamento
+Armaduras (Power Suit, Varia Suit,  Gravity Suit, Phazon Suit, e Shadow Phazon)
+foram portadas com sucesso.
 
-observações: elas foram portadas e seus stats foram aplicados da forma mais semelhante possível até então com o mod original
+Observações: elas foram portadas e seus stats foram aplicados da forma mais semelhante possível até então com o mod original
 faltam alguns detalhes como: 
 animação de Trusters quando o personagem pula com qualquer dessas armaduras
-iluminação do visor do capacete das armaduras
+iluminação do visor do capacete das armaduras.
 
 consegui adicionar o Tile do minério do mod "Phazon" no projeto, ele tem quase todas as propriedades do original, assim como particulas
 que saem quando é acertado pelo player, som de impacto com a picareta, cor e nome de exibição no mapa, iluminação própria.
