@@ -54,10 +54,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MOD.cs" />
+    <Compile Include="Tiles\PhazonTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="build.txt" />
     <Content Include="description.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NPCs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
