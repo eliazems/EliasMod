@@ -4,11 +4,11 @@ using Terraria.ModLoader;
 
 namespace EliasMod.Items.Placeable
 {
-    public class Phazon : ModItem
+    public class PhazonCore : ModItem
     {
         public override void SetDefaults()
         {
-            item.name = "Phazon Ore";
+            item.name = "Phazon Core";
             item.width = 12;
             item.height = 12;
             item.maxStack = 999;
@@ -19,7 +19,7 @@ namespace EliasMod.Items.Placeable
             item.useTime = 10;
             item.useStyle = 1;
             item.consumable = true;
-            item.createTile = mod.TileType("PhazonTile"); //put your CustomBlock Tile name
+            item.createTile = mod.TileType("PhazonCoreTile"); //put your CustomBlock Tile name
         }
         
         }

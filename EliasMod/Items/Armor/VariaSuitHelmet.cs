@@ -28,6 +28,7 @@ namespace EliasMod.Items.Armor
         {
             player.nightVision = true;
             player.rangedDamage += 0.05f;
+            player.magicDamage += 0.10f;
             player.gills = true;
             //player.breath = player.breathMax;
         }
@@ -37,15 +38,16 @@ namespace EliasMod.Items.Armor
         }
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = "15% Ranged Damage"; // the armor set bonus
-            player.rangedDamage *= 0.15f;
+            player.setBonus = "+12% Ranged Damage" + "\r\n" + "+15% Magic Damage "; // the armor set bonus
+            player.rangedDamage += 0.12f;
+            player.magicDamage += 0.15f;
         }
         
         public override void AddRecipes()  //How to craft this item
         {
         ModRecipe recipe = new ModRecipe(mod);
-        recipe.AddIngredient(ItemID.MeteoriteBar, 5);
-        recipe.AddIngredient(ItemID.HellstoneBar, 20);  //20 Hellstone e 5 Meteorite
+        recipe.AddIngredient(null, "PowerSuitHelmet", 1);
+        recipe.AddIngredient(ItemID.HellstoneBar, 20);  //20 Hellstone e 1 Power Suit Helmet
         recipe.AddTile(TileID.Anvils);   //na bigorna
         recipe.SetResult(this);
         recipe.AddRecipe();

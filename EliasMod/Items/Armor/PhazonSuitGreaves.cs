@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace EliasMod.Items.Armor
 {
-    public class VariaSuitGreaves : ModItem
+    public class PhazonSuitGreaves : ModItem
     {
         public override bool Autoload(ref string name, ref string texture, IList<EquipType> equips)
         {
@@ -15,19 +15,19 @@ namespace EliasMod.Items.Armor
 
         public override void SetDefaults()
         {
-            item.name = "Varia Suit Greaves";
+            item.name = "Phazon Suit Greaves";
             item.width = 18;
             item.height = 18;
-            AddTooltip("10% increased movement speed");
+            AddTooltip("30% increased movement speed");
             AddTooltip2("Negate Fall Damage");
             item.value = 90;
             item.rare = 2;
-            item.defense = 3;
+            item.defense = 12;
         }
 
         public override void UpdateEquip(Player player)
         {
-            player.moveSpeed += 0.10f;  
+            player.moveSpeed += 0.30f;  
             player.rangedDamage += 0.05f;
             player.spikedBoots += 1;
             player.noFallDmg = true;
@@ -36,11 +36,13 @@ namespace EliasMod.Items.Armor
         public override void AddRecipes()           //How to craft this item
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.HellstoneBar, 25);   //você precisa de 25 Hellstone Bar e 2 Meteorite
-            recipe.AddIngredient(null, "PowerSuitGreaves", 1);
-            recipe.AddTile(TileID.Anvils);              //na bigorna
+            recipe.AddIngredient(null, "GravitySuitGreaves", 1);
+            recipe.AddIngredient(null, "PurePhazon", 20);
+            recipe.AddIngredient(ItemID.SoulofNight, 13);
+            recipe.AddTile(null, "NovaWorkTableTile");              //na bigorna
             recipe.SetResult(this);
             recipe.AddRecipe();
+
         }
     }
 }

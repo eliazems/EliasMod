@@ -28,6 +28,7 @@ namespace EliasMod.Items.Armor
         {
             player.nightVision = true;
             player.rangedDamage += 0.05f;
+            player.magicDamage += 0.05f;
             player.gills = true;
         }
         public override bool IsArmorSet(Item head, Item body, Item legs)
@@ -36,8 +37,9 @@ namespace EliasMod.Items.Armor
         }
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = "8% Ranged Damage"; // the armor set bonus
-            player.rangedDamage *= 0.8f;
+            player.setBonus = "+8% Ranged Damage" + "\r\n" + "+10% Magic Damage"; // the armor set bonus
+            player.rangedDamage += 0.8f;
+            player.magicDamage += 0.10f;
         }
         public override void AddRecipes()  //How to craft this item
         {

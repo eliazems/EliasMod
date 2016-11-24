@@ -29,7 +29,12 @@ namespace EliasMod.Items.Weapons
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(Terraria.ID.ItemID.MythrilBar, 10);
+            recipe.AddIngredient(ItemID.MythrilBar, 10);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.OrichalcumBar, 10);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();
