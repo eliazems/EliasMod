@@ -42,3 +42,9 @@ os chefes do mod e NPCs
 os itemdrop dos NPCs em geral
 Power Beam com todas suas propriedades menu de upgrades, e que funcione como um item a parte, n como um item mágico ou uma arma comun, deve funcionar como um canhao que atira infinitamente mas que chege um ponto que sobre aqueça e pare de funcionar até esfriar.
 
+Creditos
+
+© Re-Logic por criar o jogo
+Bluemagic123 por criar o tModloader
+Scooterboot9697 por criar o Metroid Mod e sprites que estou usando
+
